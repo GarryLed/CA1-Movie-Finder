@@ -1,9 +1,10 @@
 <h2>Garry Ledwith, S00256356</h2>
-<h1>Movie Favourites</h1>
-<ul>
-  <li *ngFor="let movie of movies">{{movie.title}}
-    ({{movie.year}}) - Directed by {{movie.director}}
-  </li>
-</ul>
 
-<button class="btn btn-primary">Bootstrap Button</button>
+
+<div class="container">
+  <h1>Movie Favourites</h1>
+  <app-add-movie></app-add-movie>
+  <app-list-movies></app-list-movies>
+</div>
+
+
