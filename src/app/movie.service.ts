@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+import { Movie } from './movie.model';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -7,11 +9,12 @@ export class MovieService {
 
   constructor() { }
 
+  // moviesList is now using instances of the Movie class 
   moviesList = [
-    {title: "Back to the future", year: '1984', director: 'Robert Zemeckis' },
-    {title: "Requiem for a Dream", year: '2000', director: 'Darren Aronofsky'},
-    {title: "The Social Network", year: '2010', director: 'Darren Aronofsky'},
-    {title: "Fight Club", year: '1999', director: 'David Findher'}
+    new Movie("Back to the future", '1984', 'Robert Zemeckis'),
+    new Movie("Requiem for a Dream",'2000','Darren Aronofsky'),
+    new Movie("The Social Network",'2010', 'Darren Aronofsky'),
+    new Movie("Fight Club", '1999', 'David Findher')
   
   ]
 

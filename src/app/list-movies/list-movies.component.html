@@ -1,4 +1,16 @@
-<div *ngFor="let movie of movies" class="container bg-secondary text-white pt-3 pb-3 mb-1">
+<!--
+    (click)="selectMovie(movie)" describes waht we want to do 
+    when an element is clicked 
+
+    click is built in event that triggers when the host element 
+    is clicked 
+
+    above, when a movie is clicked, we will call the selectMovie() function 
+    in the list-movies-component.ts file 
+-->
+<div *ngFor="let movie of movies" class="container bg-secondary text-white pt-3 pb-3 mb-1"
+    (click)="selectMovie(movie)"
+    [class.bg-info]="isSelected(movie)">
     <div class="row align-items">
         <div class="col-sm-4">
             {{movie.title}}
@@ -11,3 +23,4 @@
         </div>
     </div>
 </div>
+
