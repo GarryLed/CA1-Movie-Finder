@@ -13,7 +13,7 @@ import { ListMoviesComponent } from './list-movies/list-movies.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'lab4-movie-list';
+  title = 'lab5-movie-list';
 
  
 }
