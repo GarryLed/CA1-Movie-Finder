@@ -11,6 +11,7 @@
 <div *ngFor="let movie of movies" class="container bg-secondary text-white pt-3 pb-3 mb-1"
     (click)="selectMovie(movie)"
     [class.bg-info]="isSelected(movie)">
+
     <div class="row align-items">
         <div class="col-sm-4">
             {{movie.title}}

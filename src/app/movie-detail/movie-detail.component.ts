@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core'; // import input 
+import { Movie } from '../movie.model'; // import the movie class 
 
 @Component({
   selector: 'app-movie-detail',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './movie-detail.component.css'
 })
 export class MovieDetailComponent {
+
+  @Input() movieDetails!:Movie; // add an input decorator 
 
 }
