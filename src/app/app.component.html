@@ -2,20 +2,14 @@
 
 
 <div class="container">
-  <h1>Movie Favourites</h1>
-  <app-add-movie></app-add-movie>
-</div>
+  <h1>Movie Finder</h1>
 
-
-<!-- Event binding -->
-<div class="container p-0">
-  <div class="row">
-    <div class="col-sm-6">
-      <app-list-movies (onSelectedMovie)="setSelectedMovie($event)"></app-list-movies>
+  <form>
+    <div class="form-group">
+     <input type="text" name="movie-name" class="form-control" #moviename placeholder="Enter movie name">
     </div>
-    <div class="col-sm-6">
-      <app-movie-detail [movieDetails]="mySelectedMovie"></app-movie-detail>
+    <div class="form-group mt-2">
+      <button (click)="getMovieDetails(moviename.value)" type="submit" class="btn btn-primary">Get Movie Details</button>
     </div>
-  </div>
-
+  </form>
 </div>

@@ -1,27 +1,32 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-//import { CommonModule } from '@angular/common';
 
-
-import { AddMovieComponent } from './add-movie/add-movie.component';
-import { ListMoviesComponent } from './list-movies/list-movies.component';
-import { MovieDetailComponent } from './movie-detail/movie-detail.component';
-
-import { Movie } from './movie.model';
+import { CommonModule } from '@angular/common';
+import { IOMDBResponse } from './omdbresponse';
+import { OmdbApiService } from './services/omdb-api.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AddMovieComponent, ListMoviesComponent, MovieDetailComponent],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'movie-list';
+  
+  title = 'Movie finder';
+  movieData:IOMDBResponse | undefined;
+  errorMessage:any; 
 
-  public mySelectedMovie!:Movie; 
+  constructor(private _omdbApiService:OmdbApiService) { }
 
-  setSelectedMovie(movie:Movie) {
-    this.mySelectedMovie=movie;
+  getMovieDetails(movieName:string): boolean {
+    this._omdbApiService.getMovieData(movieName).subscribe(
+      movieData => {
+        this.movieData=movieData;
+        console.log("Director name : " + this.movieData.Director);
+      }
+    )
+    return false;
   }
- 
+
+  
 }
