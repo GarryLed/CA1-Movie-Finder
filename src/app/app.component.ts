@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 
+import { RouterModule } from '@angular/router'; // import RouterModule
+
 import { CommonModule } from '@angular/common';
 import { IOMDBResponse } from './omdbresponse';
 import { OmdbApiService } from './services/omdb-api.service';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule], // add RouterModule to the imports array
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
