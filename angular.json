@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lab4-movie-list": {
+    "CA1-Movie-Finder": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/lab4-movie-list",
+            "outputPath": "dist/ca1-movie-finder",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lab4-movie-list:build:production"
+              "buildTarget": "CA1-Movie-Finder:build:production"
             },
             "development": {
-              "buildTarget": "lab4-movie-list:build:development"
+              "buildTarget": "CA1-Movie-Finder:build:development"
             }
           },
           "defaultConfiguration": "development"
