@@ -1,7 +1,12 @@
 import { Routes } from '@angular/router'; // import Routes type from @angular/router
-import { HomeComponent } from './pages/home/home.component'; // import HomeComponent
-import { AboutComponent } from './pages/about/about.component'; // import AboutComponent
-import { SearchComponent } from './pages/search/search.component'; // import SearchComponent
 
+import { SearchComponent } from './components/search/search.component';
+import { AboutComponent } from './components/about/about.component';
+import { SearchtitleComponent } from './components/searchtitle/searchtitle.component';
 
-export const routes: Routes = [];
+// Routes for the application
+export const routes: Routes = [
+    { path: '', component: SearchtitleComponent },
+    { path: 'search', component: SearchComponent },
+    { path: 'about', component: AboutComponent }
+];
