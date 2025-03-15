@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RouterLink } from '@angular/router';
-import { RouterLinkActive } from '@angular/router';
-import { RouterOutlet } from '@angular/router';
-
 import { OmdbApiService } from '../../services/omdb-api.service';
 import { IOMDBResponse } from '../../omdbresponse';
-
 
 
 @Component({
   selector: 'app-searchtitle',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule],
   templateUrl: './searchtitle.component.html',
   styleUrl: './searchtitle.component.css'
 })

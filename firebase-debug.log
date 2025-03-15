@@ -1,0 +1,44 @@
+[debug] [2025-03-15T09:44:38.153Z] ----------------------------------------------------------------------
+[debug] [2025-03-15T09:44:38.155Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\garryledwith\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-03-15T09:44:38.156Z] CLI Version:   13.33.0
+[debug] [2025-03-15T09:44:38.156Z] Platform:      win32
+[debug] [2025-03-15T09:44:38.156Z] Node Version:  v22.14.0
+[debug] [2025-03-15T09:44:38.156Z] Time:          Sat Mar 15 2025 09:44:38 GMT+0000 (Greenwich Mean Time)
+[debug] [2025-03-15T09:44:38.156Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-15T09:44:38.367Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-15T09:44:38.367Z] > authorizing via signed-in user (garryledwith@gmail.com)
+[debug] [2025-03-15T09:44:38.367Z] [iam] checking project movie-finder-e481c for permissions ["firebase.projects.get"]
+[debug] [2025-03-15T09:44:38.368Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:38.368Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:38.368Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c:testIamPermissions [none]
+[debug] [2025-03-15T09:44:38.368Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c:testIamPermissions x-goog-quota-user=projects/movie-finder-e481c
+[debug] [2025-03-15T09:44:38.368Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-15T09:44:39.179Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c:testIamPermissions 200
+[debug] [2025-03-15T09:44:39.180Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-15T09:44:39.180Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:39.180Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:39.180Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c [none]
+[debug] [2025-03-15T09:44:39.386Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c 200
+[debug] [2025-03-15T09:44:39.386Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/movie-finder-e481c {"projectNumber":"396720634623","projectId":"movie-finder-e481c","lifecycleState":"ACTIVE","name":"Movie-Finder","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-03-07T15:15:02.907346Z"}
+[info] 
+[info] === Serving from 'C:\Users\garryledwith\source\repos\CA1-Movie-Finder'...
+[info] 
+[debug] [2025-03-15T09:44:39.390Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:39.390Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:39.390Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/movie-finder-e481c/sites 
+[debug] [2025-03-15T09:44:40.336Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/movie-finder-e481c/sites 200
+[debug] [2025-03-15T09:44:40.337Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/movie-finder-e481c/sites {"sites":[{"name":"projects/movie-finder-e481c/sites/movie-finder-e481c","defaultUrl":"https://movie-finder-e481c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-03-15T09:44:40.337Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:40.337Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:40.338Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movie-finder-e481c/webApps/-/config [none]
+[debug] [2025-03-15T09:44:40.969Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movie-finder-e481c/webApps/-/config 200
+[debug] [2025-03-15T09:44:40.969Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movie-finder-e481c/webApps/-/config {"projectId":"movie-finder-e481c","storageBucket":"movie-finder-e481c.firebasestorage.app","apiKey":"AIzaSyB0Qg_d3GNXjDZeY9Aa2JF-PF028PLCRn8","authDomain":"movie-finder-e481c.firebaseapp.com","messagingSenderId":"396720634623"}
+[debug] [2025-03-15T09:44:40.974Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:40.974Z] Checked if tokens are valid: true, expires at: 1742035137113
+[debug] [2025-03-15T09:44:40.974Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movie-finder-e481c [none]
+[debug] [2025-03-15T09:44:41.289Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movie-finder-e481c 200
+[debug] [2025-03-15T09:44:41.289Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movie-finder-e481c {"projectId":"movie-finder-e481c","projectNumber":"396720634623","displayName":"Movie-Finder","name":"projects/movie-finder-e481c","resources":{"hostingSite":"movie-finder-e481c"},"state":"ACTIVE","etag":"1_affe6338-eaee-434e-b5aa-cf692d009005"}
+[info] i  hosting[movie-finder-e481c]: Serving hosting files from: dist/ca1-movie-finder {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/ca1-movie-finder\u001b[22m"}}
+[info] +  hosting[movie-finder-e481c]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [15/Mar/2025:09:44:49 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Mar/2025:09:44:49 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}

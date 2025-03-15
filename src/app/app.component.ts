@@ -11,7 +11,6 @@ import { RouterOutlet } from '@angular/router';
 import { IOMDBResponse } from './omdbresponse';
 import { OmdbApiService } from './services/omdb-api.service';
 
-import { SearchtitleComponent } from './components/searchtitle/searchtitle.component';
 
 // component decorator
 @Component({
